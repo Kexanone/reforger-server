@@ -10,6 +10,7 @@ PROFILE_PATH="<path to profile directory>"
 docker create \
     --name "${CONTAINER_NAME}" \
     --network host \
+    --restart on-failure \
     -v $(dirname "${CONFIG_PATH}"):/reforger/configs \
     -v ${PROFILE_PATH}:/reforger/profile \
     kexanone/reforger-server \
