@@ -6,8 +6,9 @@ RUN apt-get update && \
     apt-get install -y net-tools && \
     apt-get install -y libssl1.1 && \
     apt-get install -y wget && \
+    rm -rf /var/lib/apt/lists/* && \
     mkdir -p steamcmd && \
-    wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxf - -C /steamcmd &&\
+    wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxf - -C /steamcmd && \
     mkdir -p reforger
 
 COPY launch.sh /
