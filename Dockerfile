@@ -1,13 +1,15 @@
-FROM ubuntu:latest
+FROM debian:bullseye-slim
 
-RUN apt-get update
-RUN apt-get install -y lib32gcc1
-RUN apt-get install -y libcurl4
-RUN apt-get install -y net-tools
-RUN apt-get install -y libssl1.1
-RUN apt-get install -y wget
-RUN mkdir -p steamcmd
-RUN wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxf - -C /steamcmd
-RUN mkdir -p reforger
+RUN apt-get update && \
+    apt-get install -y lib32gcc-s1 && \
+    apt-get install -y libcurl4 && \
+    apt-get install -y net-tools && \
+    apt-get install -y libssl1.1 && \
+    apt-get install -y wget && \
+    mkdir -p steamcmd && \
+    wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxf - -C /steamcmd &&\
+    mkdir -p reforger
+
 COPY launch.sh /
 ENTRYPOINT ["./launch.sh"]
+
