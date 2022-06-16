@@ -20,4 +20,4 @@ docker create \
 **Comments:**
 - Check out the [BiKi](https://community.bistudio.com/wiki/Arma_Reforger:Server_Hosting) for details on server hosting.
 - All parameters are directly passed to `ArmaReforgerServer`. An overview of available parameters can be found on the [BiKi](https://community.bistudio.com/wiki/Arma_Reforger:Startup_Parameters).
-- `PROFILE_PATH` should point to an empty folder. Server log files will be created inside this folder.
+- `PROFILE_PATH` is the folder in which server log and save files will be stored.
