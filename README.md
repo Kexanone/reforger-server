@@ -1,4 +1,8 @@
 # reforger-server
+[![Docker Pulls](https://img.shields.io/docker/pulls/kexanone/reforger-server.svg?label=Docker%20Pulls&style=flat-square)](https://hub.docker.com/repository/docker/kexanone/reforger-server)
+[![Issues](https://img.shields.io/github/issues-raw/Kexanone/reforger-server.svg?label=Issues&style=flat-square)](https://github.com/Kexanone/reforger-server/issues)
+[![License](https://img.shields.io/badge/License-GPLv3-orange.svg?style=flat-square)](https://github.com/Kexanone/reforger-server/blob/master/LICENSE)
+
 Simple docker image for an Arma Reforger dedicated server.
 
 ## Usage
