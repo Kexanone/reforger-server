@@ -14,7 +14,7 @@ PROFILE_PATH="<path to profile directory>"
 docker create \
     --name "${CONTAINER_NAME}" \
     --network host \
-    --restart on-failure \
+    --restart always \
     -v $(dirname "${CONFIG_PATH}"):/reforger/configs \
     -v ${PROFILE_PATH}:/reforger/profile \
     kexanone/reforger-server \
@@ -26,3 +26,6 @@ docker create \
 - Check out the [BiKi](https://community.bistudio.com/wiki/Arma_Reforger:Server_Hosting) for details on server hosting.
 - All parameters are directly passed to `ArmaReforgerServer`. An overview of available parameters can be found on the [BiKi](https://community.bistudio.com/wiki/Arma_Reforger:Startup_Parameters).
 - `PROFILE_PATH` is the folder in which server log and save files will be stored.
+
+## Docker Hub Repository
+https://hub.docker.com/r/kexanone/reforger-server
