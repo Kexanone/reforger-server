@@ -1,5 +1,6 @@
 FROM debian:bullseye-slim
 
+ENV EXPERIMENTAL 0
 RUN apt-get update && \
     apt-get install -y lib32gcc-s1 && \
     apt-get install -y libcurl4 && \
