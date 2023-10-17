@@ -17,6 +17,7 @@ docker create \
     --restart always \
     -v $(dirname "${CONFIG_PATH}"):/reforger/configs \
     -v ${PROFILE_PATH}:/reforger/profile \
+    -e EXPERIMENTAL=0 \
     kexanone/reforger-server \
     -config /reforger/configs/$(basename "${CONFIG_PATH}") \
     -profile /reforger/profile \
