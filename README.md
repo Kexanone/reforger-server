@@ -27,6 +27,7 @@ docker create \
 - Check out the [BiKi](https://community.bistudio.com/wiki/Arma_Reforger:Server_Hosting) for details on server hosting.
 - All parameters are directly passed to `ArmaReforgerServer`. An overview of available parameters can be found on the [BiKi](https://community.bistudio.com/wiki/Arma_Reforger:Startup_Parameters).
 - `PROFILE_PATH` is the folder in which server log and save files will be stored.
+- `EXPERIMENTAL` is an enviroment variable that can either be `0` for using the main Reforger application or `1` for using the experimental one (default: `0`). 
 
 ## Docker Hub Repository
 https://hub.docker.com/r/kexanone/reforger-server
